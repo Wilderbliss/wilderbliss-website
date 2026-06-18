@@ -1282,8 +1282,8 @@ section {
   }
 
   .brand-panel {
-    min-height: 85vh;
-    min-height: 85svh;
+    height: 85vh;
+    height: 85svh;
   }
 
   .brand-panel--stay,
