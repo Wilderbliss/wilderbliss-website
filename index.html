@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WilderBliss | Stay. Breathe. Gather. — Rural Ireland</title>
+  <meta name="description" content="Three nature hospitality experiences on one piece of land in rural Wexford, Ireland. A private off-grid cabin, a wood-fired sauna, and a café rooted in the landscape.">
+  <meta property="og:title" content="WilderBliss | Stay. Breathe. Gather.">
+  <meta property="og:description" content="Three nature hospitality experiences on one piece of land in rural Wexford, Ireland. A private off-grid cabin, a wood-fired sauna, and a café rooted in the landscape.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wilderbliss.ie">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/logos/pause-neg.png" type="image/png">
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <span class="topbar__label">Contact</span>
+    <a href="mailto:stay@wilderbliss.ie">stay@wilderbliss.ie</a>
+    <span class="topbar__sep">·</span>
+    <a href="mailto:info@wilderbliss.ie">info@wilderbliss.ie</a>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" aria-label="WilderBliss home">
+        <img class="wordmark-img" src="assets/logos/wordmark-neg.png" alt="WilderBliss">
+      </a>
+      <ul class="nav__links">
+        <li><a href="stay.html">Stay</a></li>
+        <li><a href="breathe.html">Breathe</a></li>
+        <li><a href="gather.html">Gather</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="stay.html#early-access" class="nav__cta">Book a stay</a>
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" style="min-height:100vh;justify-content:center;align-items:center;text-align:center;background:var(--color-charcoal);background-image:url('assets/images/brook-field.jpg');background-size:cover;background-position:center 35%;position:relative;">
+    <div style="position:absolute;inset:0;background:rgba(0,0,0,0.58);z-index:0;"></div>
+    <div style="position:relative;z-index:1;padding:0 var(--space-md);width:100%;">
+      <p style="font-size:var(--type-caption);letter-spacing:0.2em;text-transform:uppercase;color:var(--color-muted-sage);margin-bottom:var(--space-lg);">Rural Wexford, Ireland</p>
+      <!-- Wordmark + tagline: logo centred, tagline right-aligned below -->
+      <div style="display:inline-block;text-align:right;margin-bottom:var(--space-xl);max-width:min(700px,85vw);">
+        <img
+          src="assets/logos/wordmark-neg.png"
+          alt="WilderBliss"
+          style="width:100%;height:auto;display:block;"
+        >
+        <p style="font-family:var(--font-display);font-size:clamp(0.85rem,1.4vw,1.1rem);font-weight:300;font-style:italic;color:var(--color-stone);letter-spacing:0.06em;margin:0.6em 0 0 0;">Wilderness, measured.</p>
+      </div>
+      <a href="#collection" style="font-size:var(--type-caption);letter-spacing:0.2em;text-transform:uppercase;color:var(--color-bone);opacity:0.5;text-decoration:none;display:inline-flex;align-items:center;gap:0.5em;transition:opacity 0.3s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.5'">
+        Explore ↓
+      </a>
+    </div>
+  </section>
+
+  <!-- THREE-PILLAR LANDING -->
+  <section id="collection">
+    <div style="background:var(--color-charcoal);padding:var(--space-lg) var(--space-md) var(--space-md);">
+      <p style="font-size:var(--type-caption);letter-spacing:0.18em;text-transform:uppercase;color:var(--color-muted-sage);">The Collection</p>
+    </div>
+    <div class="brand-landing">
+
+      <!-- STAY -->
+      <div class="brand-panel brand-panel--stay" style="background-image:url('assets/images/brook-stream.jpg');background-size:cover;background-position:center 40%;">
+        <a href="stay.html" class="brand-panel__link" aria-label="Explore Stay by WilderBliss"></a>
+        <div class="brand-panel__top">
+          <span class="brand-panel__status">Launching 2026</span>
+          <div class="brand-panel__logo-wrap">
+            <img src="assets/logos/stay-neg.png" alt="Stay by WilderBliss" class="brand-panel__logo">
+          </div>
+        </div>
+        <div class="brand-panel__content">
+          <span class="brand-panel__divider"></span>
+          <span class="brand-panel__category">Private cabin retreat</span>
+          <h2 class="brand-panel__headline">A cabin placed quietly within working land.</h2>
+          <p class="brand-panel__body">Off-grid. Wood-fired sauna. Complete privacy. Designed for two.</p>
+          <span class="brand-panel__cta">Explore Stay →</span>
+        </div>
+      </div>
+
+      <!-- BREATHE -->
+      <div class="brand-panel brand-panel--breathe" style="background-image:url('assets/images/brook-water.jpg');background-size:cover;background-position:center 40%;">
+        <a href="breathe.html" class="brand-panel__link" aria-label="Explore Breathe by WilderBliss"></a>
+        <div class="brand-panel__top">
+          <span class="brand-panel__status">Launching 2027</span>
+          <div class="brand-panel__logo-wrap">
+            <img src="assets/logos/breathe-neg.png" alt="Breathe by WilderBliss" class="brand-panel__logo">
+          </div>
+        </div>
+        <div class="brand-panel__content">
+          <span class="brand-panel__divider"></span>
+          <span class="brand-panel__category">Sauna &amp; natural swimming</span>
+          <h2 class="brand-panel__headline">Heat. Cold. Stillness.</h2>
+          <p class="brand-panel__body">The oldest wellness practice, stripped back to what it always was.</p>
+          <span class="brand-panel__cta">Explore Breathe →</span>
+        </div>
+      </div>
+
+      <!-- GATHER -->
+      <div class="brand-panel brand-panel--gather" style="background-image:url('assets/images/gather-terrace.jpg');background-size:cover;background-position:center;">
+        <a href="gather.html" class="brand-panel__link" aria-label="Explore Gather by WilderBliss"></a>
+        <div class="brand-panel__top">
+          <span class="brand-panel__status">Opening 2027</span>
+          <div class="brand-panel__logo-wrap">
+            <img src="assets/logos/gather-neg.png" alt="Gather by WilderBliss" class="brand-panel__logo">
+          </div>
+        </div>
+        <div class="brand-panel__content">
+          <span class="brand-panel__divider"></span>
+          <span class="brand-panel__category">Café &amp; restaurant</span>
+          <h2 class="brand-panel__headline">Food grown close. Cooked simply. Shared slowly.</h2>
+          <p class="brand-panel__body">A place where the meal is never rushed and sourcing is never hidden.</p>
+          <span class="brand-panel__cta">Explore Gather →</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ETHOS / BRAND STORY -->
+  <section class="ethos" id="the-idea">
+    <div class="container">
+      <div class="ethos__grid">
+
+        <div class="ethos__intro">
+          <span class="section-label">The Idea</span>
+          <span class="rule"></span>
+          <h2>Space without spectacle.</h2>
+          <p class="mt-md">WilderBliss is not a resort. It is not a destination. It is not built for volume.</p>
+          <p class="mt-md">It exists to create rare space — physical and psychological — for people who seek stillness without performance and comfort without noise.</p>
+          <p class="mt-md">Placed on privately owned farmland in rural Ireland, each structure is positioned with deliberate distance, sightline control, and architectural restraint. The result is simple: silence, privacy, and the feeling of being alone — without isolation.</p>
+          <p class="mt-md">Hosting is discreet. Sustainability is embedded quietly. Architecture is reversible and low-impact.</p>
+          <a href="about.html" class="btn mt-lg">About WilderBliss</a>
+        </div>
+
+        <div>
+          <div class="ethos__contrasts">
+            <p style="font-size:0.72rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--color-muted-sage);margin-bottom:var(--space-md);">Rarity &amp; contrast</p>
+
+            <div class="ethos__contrast-item">
+              <span class="ethos__contrast-label">Alone,</span>
+              <span class="ethos__contrast-desc">without isolation.</span>
+            </div>
+            <div class="ethos__contrast-item">
+              <span class="ethos__contrast-label">Luxury,</span>
+              <span class="ethos__contrast-desc">without indulgence.</span>
+            </div>
+            <div class="ethos__contrast-item">
+              <span class="ethos__contrast-label">Discovery,</span>
+              <span class="ethos__contrast-desc">without effort.</span>
+            </div>
+            <div class="ethos__contrast-item">
+              <span class="ethos__contrast-label">Sustainable,</span>
+              <span class="ethos__contrast-desc">without signalling.</span>
+            </div>
+            <div class="ethos__contrast-item">
+              <span class="ethos__contrast-label">Calm.</span>
+              <span class="ethos__contrast-desc">Grounded. Understated. Modern. Timeless.</span>
+            </div>
+          </div>
+
+          <p style="font-family:var(--font-display);font-size:1.1rem;font-style:italic;color:var(--color-stone);margin-top:var(--space-lg);line-height:1.6;">
+            It should feel discovered, not launched.<br>
+            Remembered, not advertised.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LAND PARTNERSHIP -->
+  <section class="section--forest">
+    <div class="container">
+      <div class="split">
+        <div class="split__content">
+          <span class="section-label">Rooted in the Land</span>
+          <span class="rule"></span>
+          <h2 class="text-bone">WilderBliss works with farmers — not around them.</h2>
+          <p class="mt-md">Our cabins are placed on working land through respectful partnership. They sit lightly. They preserve the character of the landscape. They do not reshape it.</p>
+          <p class="mt-md">A portion of every stay supports the landowners who host us, helping rural land remain viable and valued. We embrace the land as it is.</p>
+        </div>
+        <div>
+          <!-- Photo placeholder — replace with actual image -->
+          <div style="aspect-ratio:4/3;overflow:hidden;">
+        <img src="assets/images/brook-pano.jpg" alt="The Brook field, rural Wexford" style="width:100%;height:100%;object-fit:cover;display:block;object-position:center 60%;">
+      </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAUSE MARK + TAGLINE -->
+  <section style="background:var(--color-charcoal);padding:var(--space-xl) 0;text-align:center;">
+    <div style="display:inline-flex;align-items:center;gap:2rem;">
+      <img src="assets/logos/pause-neg.png" alt="" style="height:56px;width:auto;display:block;opacity:0.6;">
+      <p style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:300;font-style:italic;color:var(--color-bone);letter-spacing:0.02em;margin:0;">Wilderness, measured.</p>
+    </div>
+    <p style="font-size:var(--type-caption);letter-spacing:0.15em;text-transform:uppercase;color:var(--color-stone);margin-top:var(--space-md);opacity:0.5;">Rural Wexford, Ireland</p>
+  </section>
+
+  <!-- EARLY ACCESS CTA -->
+  <section class="cta-section" id="early-access">
+    <div class="container--narrow">
+      <span class="section-label">Launching 2026</span>
+      <h2>Be first to book Brook.</h2>
+      <p class="mt-sm">The first WilderBliss cabin is taking shape — a quiet place beside moving water. Join the early access list and we'll reach you before anyone else.</p>
+      <form class="email-form mt-lg" name="early-access" method="POST" netlify netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="early-access">
+        <input type="hidden" name="bot-field" style="display:none">
+        <input type="email" name="email" placeholder="Your email address" required autocomplete="email">
+        <button type="submit">Join early access</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <img class="wordmark-img" src="assets/logos/wordmark-neg.png" alt="WilderBliss" style="margin-bottom:var(--space-md);">
+          <p class="footer__tagline">Wilderness, measured.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="footer__nav">
+            <li><a href="stay.html">Stay by WilderBliss</a></li>
+            <li><a href="breathe.html">Breathe by WilderBliss</a></li>
+            <li><a href="gather.html">Gather by WilderBliss</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer__contact">
+          <a href="mailto:stay@wilderbliss.ie">stay@wilderbliss.ie</a>
+          <a href="https://www.instagram.com/wilderbliss.ie" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:0.7;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            @wilderbliss.ie
+          </a>
+          <span>Rural Wexford, Ireland</span>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">&copy; 2026 WilderBliss. All rights reserved.</span>
+        <img src="assets/logos/pause-neg.png" alt="" style="height:24px;opacity:0.2;">
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
