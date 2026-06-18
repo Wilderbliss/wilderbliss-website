@@ -53,7 +53,7 @@ document.querySelectorAll('.email-form').forEach(form => {
     .then(() => {
       const input = form.querySelector('input[type="email"]');
       if (input) input.value = '';
-      btn.textContent = "You're on the list";
+      btn.textContent = "You’re on the list";
       setTimeout(() => {
         btn.textContent = original;
         btn.disabled = false;
@@ -64,4 +64,4 @@ document.querySelectorAll('.email-form').forEach(form => {
       btn.disabled = false;
     });
   });
-}
+});
