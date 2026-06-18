@@ -979,13 +979,6 @@ section {
 .nav-pause:hover {
   opacity: 1;
 }
-body.page-inner .nav .wordmark-img {
-  display: none;
-}
-body.page-inner .nav .nav-pause {
-  display: block;
-}
-
 /* Taller page heroes on inner pages */
 .page-hero {
   min-height: 80vh;
