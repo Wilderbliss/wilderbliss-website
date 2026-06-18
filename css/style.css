@@ -986,7 +986,7 @@ section {
 }
 /* Taller page heroes on inner pages */
 .page-hero {
-  min-height: 80vh;
+  min-height: 100vh;
 }
 
 /* ============================================================
