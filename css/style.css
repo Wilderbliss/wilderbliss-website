@@ -1289,7 +1289,8 @@ body.page-inner .nav .nav-pause {
   }
 
   .brand-panel {
-    min-height: 70vh;
+    min-height: 85vh;
+    min-height: 85svh;
   }
 
   .brand-panel--stay,
@@ -1383,6 +1384,10 @@ body.page-inner .nav .nav-pause {
   .footer__inner {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
+  }
+
+  .brand-panel__cta {
+    padding-bottom: var(--space-md);
   }
 
   .email-form {
