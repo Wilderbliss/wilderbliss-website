@@ -827,6 +827,7 @@ section {
 /* Explicit text colours for page hero content (always over dark photo overlay) */
 .page-hero__content h1 {
   color: var(--color-bone);
+  font-size: clamp(2.4rem, 4.5vw, 4rem);
 }
 .page-hero__content .section-label {
   color: rgba(236,235,231,0.7);
