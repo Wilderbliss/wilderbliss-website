@@ -1,5 +1,5 @@
 /* ============================================================
-   WILDERBLISS  — Design System
+   WILDERBLISS — Design System
    Based on official brand guidelines
    ============================================================ */
 
@@ -827,7 +827,6 @@ section {
 /* Explicit text colours for page hero content (always over dark photo overlay) */
 .page-hero__content h1 {
   color: var(--color-bone);
-  font-size: clamp(2.4rem, 4.5vw, 4rem);
 }
 .page-hero__content .section-label {
   color: rgba(236,235,231,0.7);
@@ -840,7 +839,7 @@ section {
 
 .page-hero__subbrand-logo {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 38px;
@@ -1407,5 +1406,178 @@ section {
 @media (max-width: 1024px) {
   .pillars__grid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ============================================================
+   EARLY ACCESS POPUP
+   ============================================================ */
+
+.wb-popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+}
+
+.wb-popup.is-open {
+  display: flex;
+}
+
+.wb-popup__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(22, 21, 21, 0.75);
+  backdrop-filter: blur(3px);
+  cursor: pointer;
+}
+
+.wb-popup__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 820px;
+  width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
+  box-shadow: 0 32px 80px rgba(0,0,0,0.5);
+}
+
+.wb-popup__image {
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+}
+
+.wb-popup__image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+}
+
+.wb-popup__form-panel {
+  background: var(--color-night-blue);
+  padding: clamp(2rem, 5%, 3.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.wb-popup__label {
+  font-size: var(--type-caption);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-muted-sage);
+}
+
+.wb-popup__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  font-weight: 300;
+  color: var(--color-bone);
+  line-height: 1.2;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.wb-popup__desc {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-stone);
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+.wb-popup__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 100%;
+  margin-top: 0.5rem;
+}
+
+.wb-popup__form input[type="email"] {
+  border-right: 1px solid rgba(236,235,231,0.3) !important;
+  border-bottom: none !important;
+  background: rgba(255,255,255,0.06);
+}
+
+.wb-popup__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  background: rgba(22,21,21,0.6);
+  border: 1px solid rgba(236,235,231,0.2);
+  color: var(--color-bone);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition);
+  line-height: 1;
+}
+
+.wb-popup__close:hover {
+  background: rgba(22,21,21,0.9);
+}
+
+.wb-popup__no-thanks {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-stone);
+  opacity: 0.5;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 0.25rem;
+  text-align: left;
+  transition: opacity var(--transition);
+}
+
+.wb-popup__no-thanks:hover {
+  opacity: 1;
+}
+
+/* Animate in */
+.wb-popup__inner {
+  transform: translateY(12px);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.wb-popup.is-open .wb-popup__inner {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media (max-width: 640px) {
+  .wb-popup__inner {
+    grid-template-columns: 1fr;
+    max-height: 85vh;
+    overflow-y: auto;
+  }
+
+  .wb-popup__image {
+    min-height: 200px;
+    max-height: 220px;
+  }
+
+  .wb-popup__form-panel {
+    padding: 2rem 1.5rem;
   }
 }
