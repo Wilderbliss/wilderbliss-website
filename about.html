@@ -99,7 +99,6 @@
     </div>
   </section>
 
-
   <!-- THREE PILLARS OVERVIEW -->
   <section class="section--charcoal">
     <div class="container">
@@ -109,7 +108,7 @@
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--space-lg);">
         <div>
           <img src="assets/logos/stay-neg.png" alt="Stay by WilderBliss" style="height:28px;margin-bottom:var(--space-md);">
-          <p style="font-size:0.9rem;">Private off-grid cabins in rural Ireland. Launching 2026.</p>
+          <p style="font-size:0.9rem;">Private off-grid cabins in rural Ireland. Launching 2027.</p>
           <a href="stay.html" class="btn mt-md" style="font-size:0.7rem;padding:0.6rem 1.4rem;">Explore Stay</a>
         </div>
         <div>
@@ -168,6 +167,30 @@
       </div>
     </div>
   </footer>
+
+
+  <!-- EARLY ACCESS POPUP -->
+  <div class="wb-popup" id="wb-popup" role="dialog" aria-modal="true" aria-labelledby="wb-popup-title">
+    <div class="wb-popup__overlay" id="wb-popup-overlay"></div>
+    <div class="wb-popup__inner">
+      <button class="wb-popup__close" id="wb-popup-close" aria-label="Close">&#x2715;</button>
+      <div class="wb-popup__image">
+        <img src="assets/images/cabin-exterior-summer.jpg" alt="WilderBliss cabin" loading="lazy">
+      </div>
+      <div class="wb-popup__form-panel">
+        <span class="wb-popup__label">Early Access</span>
+        <h2 class="wb-popup__title" id="wb-popup-title">First to know.<br>First to book.</h2>
+        <p class="wb-popup__desc">Join for early access to dates, founder notes, and a quiet guide to planning your stay.</p>
+        <form class="email-form wb-popup__form" name="popup-early-access" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="popup-early-access">
+          <input type="hidden" name="bot-field" style="display:none">
+          <input type="email" name="email" placeholder="Your email address" required autocomplete="email">
+          <button type="submit">Keep me in the loop</button>
+        </form>
+        <button class="wb-popup__no-thanks" id="wb-popup-no-thanks">No thanks</button>
+      </div>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stay by WilderBliss — Private Off-Grid Cabins in Rural Ireland</title>
-  <meta name="description" content="Private off-grid cabins set quietly within rural Ireland. Wood-fired sauna, complete privacy, designed for two. Launching 2026.">
+  <meta name="description" content="Private off-grid cabins set quietly within rural Ireland. Wood-fired sauna, complete privacy, designed for two. Launching 2027.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="assets/logos/pause-neg.png" type="image/png">
 </head>
@@ -165,7 +165,7 @@
   <!-- EARLY ACCESS CTA -->
   <section class="cta-section" id="early-access">
     <div class="container--narrow">
-      <span class="section-label">Launching 2026</span>
+      <span class="section-label">Launching 2027</span>
       <h2>Be first to book Brook.</h2>
       <p class="mt-sm">The first WilderBliss cabin is taking shape. A quiet place beside moving water. Join the list and we'll reach you before anyone else.</p>
       <form class="email-form mt-lg" action="#" method="post">
@@ -207,6 +207,30 @@
       </div>
     </div>
   </footer>
+
+
+  <!-- EARLY ACCESS POPUP -->
+  <div class="wb-popup" id="wb-popup" role="dialog" aria-modal="true" aria-labelledby="wb-popup-title">
+    <div class="wb-popup__overlay" id="wb-popup-overlay"></div>
+    <div class="wb-popup__inner">
+      <button class="wb-popup__close" id="wb-popup-close" aria-label="Close">&#x2715;</button>
+      <div class="wb-popup__image">
+        <img src="assets/images/cabin-exterior-summer.jpg" alt="WilderBliss cabin" loading="lazy">
+      </div>
+      <div class="wb-popup__form-panel">
+        <span class="wb-popup__label">Early Access</span>
+        <h2 class="wb-popup__title" id="wb-popup-title">First to know.<br>First to book.</h2>
+        <p class="wb-popup__desc">Join for early access to dates, founder notes, and a quiet guide to planning your stay.</p>
+        <form class="email-form wb-popup__form" name="popup-early-access" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="popup-early-access">
+          <input type="hidden" name="bot-field" style="display:none">
+          <input type="email" name="email" placeholder="Your email address" required autocomplete="email">
+          <button type="submit">Keep me in the loop</button>
+        </form>
+        <button class="wb-popup__no-thanks" id="wb-popup-no-thanks">No thanks</button>
+      </div>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
