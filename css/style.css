@@ -1581,3 +1581,25 @@ section {
     padding: 2rem 1.5rem;
   }
 }
+
+/* ============================================================
+   RENDER TAG — architectural visualisation notice
+   ============================================================ */
+
+.render-tag {
+  position: absolute;
+  bottom: 0.85rem;
+  left: 0.85rem;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-bone);
+  opacity: 0.82;
+  background: rgba(22, 21, 21, 0.52);
+  padding: 0.38em 0.75em;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  pointer-events: none;
+  z-index: 2;
+  white-space: nowrap;
+}
