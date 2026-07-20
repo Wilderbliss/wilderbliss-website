@@ -842,7 +842,7 @@ section {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 38px;
+  height: 72px;
   width: auto;
   opacity: 1;
   z-index: 2;
@@ -1602,4 +1602,11 @@ section {
   pointer-events: none;
   z-index: 2;
   white-space: nowrap;
+}
+
+.render-tag--popup {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  padding: 0.45em 0.9em;
+  opacity: 0.9;
 }
