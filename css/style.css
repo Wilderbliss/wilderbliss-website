@@ -1656,3 +1656,20 @@ section {
 .brand-panel__top {
   text-shadow: 0 1px 3px rgba(0,0,0,0.7), 0 0 22px rgba(0,0,0,0.55);
 }
+
+/* Mobile menu: generous, non-overlapping tap targets */
+@media (max-width: 768px) {
+  .nav__links { padding: var(--space-md) var(--space-md); }
+  .nav__links li {
+    width: 100%;
+    border-bottom: 1px solid rgba(236,235,231,0.12);
+  }
+  .nav__links li:last-child { border-bottom: none; }
+  .nav__links a {
+    display: block;
+    width: 100%;
+    padding: 1.15rem 0;
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+}
