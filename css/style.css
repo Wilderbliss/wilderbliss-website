@@ -1355,7 +1355,12 @@ section {
   }
 
   .nav__cta {
-    display: none;
+    margin-left: auto;
+    margin-right: var(--space-sm);
+    padding: 0.4rem 0.8rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
   }
 
   .nav__toggle {
@@ -1610,4 +1615,10 @@ section {
   letter-spacing: 0.12em;
   padding: 0.45em 0.9em;
   opacity: 0.9;
+}
+
+/* Mobile: keep wordmark + waitlist button + menu on one line */
+@media (max-width: 480px) {
+  .nav .wordmark-img { height: 20px; }
+  .nav__cta { padding: 0.35rem 0.6rem; font-size: 0.62rem; letter-spacing: 0.06em; }
 }

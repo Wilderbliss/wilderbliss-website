@@ -6,14 +6,15 @@
   const DISMISS_DAYS = 7;
 
   function shouldShow() {
-    const val = localStorage.getItem(STORAGE_KEY);
+    let val = null;
+    try { val = localStorage.getItem(STORAGE_KEY); } catch (e) {}
     if (!val) return true;
     const dismissed = parseInt(val, 10);
     return Date.now() - dismissed > DISMISS_DAYS * 864e5;
   }
 
   function dismiss() {
-    localStorage.setItem(STORAGE_KEY, Date.now().toString());
+    try { localStorage.setItem(STORAGE_KEY, Date.now().toString()); } catch (e) {}
   }
 
   function openPopup(popup) {
@@ -30,10 +31,21 @@
   document.addEventListener('DOMContentLoaded', function () {
     const popup = document.getElementById('wb-popup');
     if (!popup) return;
-    if (!shouldShow()) return;
 
-    // Show after 4 seconds
-    const timer = setTimeout(() => openPopup(popup), 4000);
+    // "Join the waitlist" buttons always open the popup
+    document.querySelectorAll('[data-waitlist]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        clearTimeout(timer);
+        openPopup(popup);
+        const input = popup.querySelector('input[type="email"]');
+        if (input) setTimeout(() => input.focus(), 300);
+      });
+    });
+
+    // Show automatically after 4 seconds (unless recently dismissed)
+    let timer = null;
+    if (shouldShow()) timer = setTimeout(() => openPopup(popup), 4000);
 
     // Close button
     const closeBtn = document.getElementById('wb-popup-close');
