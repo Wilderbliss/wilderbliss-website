@@ -1628,4 +1628,31 @@ section {
 .brand-panel__top {
   text-shadow: 0 1px 2px rgba(0,0,0,0.55), 0 0 18px rgba(0,0,0,0.45);
 }
-.brand-panel__body { color: var(--color-bone); }
+
+
+/* Pillar text: larger and brighter for legibility */
+.brand-panel__category {
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  color: var(--color-bone);
+}
+.brand-panel__body {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-bone);
+  max-width: 32ch;
+}
+.brand-panel__cta {
+  font-size: 0.82rem;
+  font-weight: 500;
+  opacity: 1;
+}
+.brand-panel__status {
+  font-size: 0.75rem;
+  color: var(--color-bone);
+}
+.brand-panel__content,
+.brand-panel__top {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7), 0 0 22px rgba(0,0,0,0.55);
+}
