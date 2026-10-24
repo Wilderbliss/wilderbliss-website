@@ -1673,3 +1673,9 @@ section {
     line-height: 1.2;
   }
 }
+
+/* Render labels never overflow their image on small screens */
+.render-tag { max-width: calc(100% - 1.7rem); white-space: normal; line-height: 1.4; }
+@media (max-width: 480px) {
+  .render-tag--popup { font-size: 0.6rem; letter-spacing: 0.1em; }
+}
