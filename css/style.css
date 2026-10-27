@@ -783,10 +783,10 @@ section {
   overflow: hidden;
 }
 
-.page-hero--stay    { background-color: var(--color-deep-forest); background-image: url('../assets/images/brook-field.jpg'); background-size: cover; background-position: center 30%; }
-.page-hero--breathe { background-color: var(--color-night-blue); background-image: url('../assets/images/brook-ivy.jpg'); background-size: cover; background-position: center 30%; }
-.page-hero--gather  { background-color: var(--color-dark-moss); background-image: url('../assets/images/gather-terrace.jpg'); background-size: cover; background-position: center; }
-.page-hero--about   { background-color: var(--color-blue-grey); background-image: url('../assets/images/gather-exterior.jpg'); background-size: cover; background-position: center 30%; }
+.page-hero--stay    { background-color: var(--color-deep-forest); background-image: url('../assets/images/brook-field.webp'); background-size: cover; background-position: center 30%; }
+.page-hero--breathe { background-color: var(--color-night-blue); background-image: url('../assets/images/brook-ivy.webp'); background-size: cover; background-position: center 30%; }
+.page-hero--gather  { background-color: var(--color-dark-moss); background-image: url('../assets/images/gather-terrace.webp'); background-size: cover; background-position: center; }
+.page-hero--about   { background-color: var(--color-blue-grey); background-image: url('../assets/images/gather-exterior.webp'); background-size: cover; background-position: center 30%; }
 
 /* Dark overlay for page heroes with photos */
 .page-hero--stay::before,
