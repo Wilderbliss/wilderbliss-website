@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About — WilderBliss</title>
   <meta name="description" content="WilderBliss began with a question. What would it look like to step away — properly? Private cabins, natural wellness, and honest food, placed quietly within rural Ireland.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" as="image" href="assets/images/gather-exterior.webp" type="image/webp" media="(min-width: 769px)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/gather-exterior-900.webp" type="image/webp" media="(max-width: 768px)" fetchpriority="high">
   <link rel="icon" href="/favicon.ico?v=2" sizes="any">
   <link rel="icon" href="/favicon-32.png?v=2" type="image/png" sizes="32x32">
   <link rel="icon" href="/icon-192.png?v=2" type="image/png" sizes="192x192">
@@ -89,7 +94,7 @@
         </div>
         <div>
           <div style="aspect-ratio:3/4;overflow:hidden;position:relative;">
-          <img loading="lazy" decoding="async" src="assets/images/cabin-angled.webp" alt="WilderBliss cabin set within the landscape" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <img loading="lazy" decoding="async" src="assets/images/cabin-angled.webp" srcset="assets/images/cabin-angled-900.webp 900w, assets/images/cabin-angled.webp 1600w" sizes="(max-width: 768px) 100vw, 40vw" alt="WilderBliss cabin set within the landscape" style="width:100%;height:100%;object-fit:cover;display:block;">
           <div style='position:absolute;inset:0;background:rgba(0,0,0,0.1);'></div>
         </div>
         </div>
@@ -185,7 +190,7 @@
     <div class="wb-popup__inner">
       <button class="wb-popup__close" id="wb-popup-close" aria-label="Close">&#x2715;</button>
       <div class="wb-popup__image">
-        <img src="assets/images/cabin-exterior-summer-900.webp" alt="WilderBliss cabin" decoding="async">
+        <img data-src="assets/images/cabin-exterior-summer-900.webp" alt="WilderBliss cabin" decoding="async">
         <span class="render-tag render-tag--popup">Architectural render · Photography to follow</span>
       </div>
       <div class="wb-popup__form-panel">

@@ -17,7 +17,19 @@
     try { localStorage.setItem(STORAGE_KEY, Date.now().toString()); } catch (e) {}
   }
 
+  // Load the popup photo once the page itself has finished loading,
+  // so it never competes with the main photos but is ready before anyone clicks.
+  function loadPopupImage() {
+    document.querySelectorAll('.wb-popup img[data-src]').forEach(img => {
+      img.src = img.dataset.src;
+      img.removeAttribute('data-src');
+    });
+  }
+  if (document.readyState === 'complete') loadPopupImage();
+  else window.addEventListener('load', loadPopupImage);
+
   function openPopup(popup) {
+    loadPopupImage();
     popup.classList.add('is-open');
     document.body.style.overflow = 'hidden';
   }
@@ -140,3 +152,22 @@ document.querySelectorAll('.email-form').forEach(form => {
     });
   });
 });
+
+
+// ── Lazy-load background photos (homepage pillar panels) ────
+// They start loading just before they scroll into view, so the
+// main photo at the top of the page gets the connection first.
+(function () {
+  function show(el) { el.style.backgroundImage = "url('" + el.dataset.bg + "')"; el.removeAttribute('data-bg'); }
+  function init() {
+    const els = document.querySelectorAll('[data-bg]');
+    if (!els.length) return;
+    if (!('IntersectionObserver' in window)) { els.forEach(show); return; }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { show(e.target); io.unobserve(e.target); } });
+    }, { rootMargin: '100px 0px' });
+    els.forEach(el => io.observe(el));
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
