@@ -49,10 +49,11 @@
 
   /* Type scale */
   --type-h1:                clamp(2.8rem, 6vw, 5rem);
-  --type-h2:                clamp(2rem, 4vw, 3rem);
-  --type-h3:                clamp(1.4rem, 2.5vw, 1.9rem);
+  --type-h2:                clamp(2.3rem, 4.6vw, 3.6rem);
+  --type-h3:                clamp(1.6rem, 2.8vw, 2.25rem);
   --type-body:              1.05rem;
   --type-caption:           0.75rem;
+  --type-label:             clamp(0.95rem, 1.3vw, 1.15rem);
   --type-nav:               0.95rem;
 
   /* Spacing */
@@ -152,7 +153,7 @@ p {
 /* Section label (small category tag above headings) */
 .section-label {
   font-family: var(--font-body);
-  font-size: var(--type-caption);
+  font-size: var(--type-label);
   font-weight: 400;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -1265,14 +1266,14 @@ section {
 
 .ethos__contrast-label {
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: 1.45rem;
   font-weight: 300;
   font-style: italic;
   color: var(--color-bone);
 }
 
 .ethos__contrast-desc {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--color-stone);
   line-height: 1.6;
   max-width: 100%;
