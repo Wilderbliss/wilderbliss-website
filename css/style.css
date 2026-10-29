@@ -93,7 +93,7 @@ body {
   font-family: var(--font-body);
   font-weight: 300;
   color: var(--text-on-dark);
-  background-color: var(--color-charcoal);
+  background-color: var(--color-dark-moss);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -205,7 +205,7 @@ section {
   left: 0;
   right: 0;
   height: var(--topbar-height);
-  background: rgba(22,21,21,0.96);
+  background: rgba(42,53,40,0.97);
   border-bottom: 1px solid rgba(236,235,231,0.07);
   display: flex;
   align-items: center;
@@ -256,7 +256,7 @@ section {
 }
 
 .nav.scrolled {
-  background: rgba(22, 21, 21, 0.92);
+  background: rgba(42, 53, 40, 0.94);
   backdrop-filter: blur(8px);
 }
 
@@ -693,7 +693,7 @@ section {
    ============================================================ */
 
 .footer {
-  background: var(--color-charcoal);
+  background: var(--color-dark-moss);
   padding: var(--space-lg) 0;
   border-top: 1px solid var(--border-subtle);
 }
@@ -1239,7 +1239,7 @@ section {
    ============================================================ */
 
 .ethos {
-  background: var(--color-charcoal);
+  background: var(--color-dark-moss);
   padding: var(--space-2xl) 0;
 }
 
@@ -1325,17 +1325,17 @@ section {
 
   .nav {
     top: 0;
-    background: rgba(22, 21, 21, 0.95);
+    background: rgba(42, 53, 40, 0.97);
     backdrop-filter: none;
   }
 
   .nav.scrolled {
-    background: rgba(22, 21, 21, 0.98);
+    background: rgba(42, 53, 40, 0.99);
     backdrop-filter: none;
   }
 
   .nav.menu-open {
-    background: var(--color-charcoal) !important;
+    background: var(--color-dark-moss) !important;
     backdrop-filter: none;
   }
 
@@ -1351,7 +1351,7 @@ section {
     display: none;
     position: fixed;
     inset: var(--nav-height) 0 0 0;
-    background: var(--color-charcoal);
+    background: var(--color-dark-moss);
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
